@@ -29,7 +29,7 @@ I used the graphene library to implement Graphql API query and mutation.
 query all listed statements in graphql dashboard:
 
 
-###### 1) Create new blog post
+###  1) Create new blog post
 
 
  mutation CreateMutation{
@@ -63,7 +63,7 @@ o/p:
 }
 '''
 
-###### 2) Update blog post
+###  2) Update blog post
 
 
  mutation updatemutation{
@@ -95,7 +95,7 @@ o/p:
 }
 
 
-###### 3) create new  comment with author name 
+###  3) create new  comment with author name 
 
 
  mutation CreateCommentMutation{
@@ -127,7 +127,7 @@ o/p:
 }
 
 
-###### 4)Delete comment with unique ID 
+###  4)Delete comment with unique ID 
 
 
  mutation DeleteComment{
@@ -152,7 +152,7 @@ o/p:
 }
 
 
-###### 5)query to get all posts
+###  5)query to get all posts
 
 
  query{
@@ -167,7 +167,7 @@ o/p:
 
 o/p:
 
-
+```
 {
   "data": {
     "posts": [
@@ -204,9 +204,9 @@ o/p:
     ]
   }
 }
+```
 
-
-###### 6)query to get all comments with post id
+###  6)query to get all comments with post id
 
 
  query{

@@ -1,4 +1,4 @@
- graphql-assignment
+##---Graphql-assignment---##
 
 A simple blog post and comments with associated author, and curd operation on graphical API.
 
@@ -9,10 +9,20 @@ I used the graphene library to implement Graphql API query and mutation.
 
 
 1)Clone repo
+
+
 2)create virtual environment
+
+
 3)install required library to implement by using "pip install -r requirements.txt"
+
+
 4)python manage.py makemigrations
+
+
 5)python manahe.py migrate
+
+
 6)open browser and paste "http://127.0.0.1:8000/graphql/"
 
 
@@ -34,7 +44,9 @@ query all listed statements in graphql dashboard:
    }
  }
 
-<!-- o/p -->
+
+o/p:
+
 
 {
   "data": {
@@ -66,7 +78,7 @@ query all listed statements in graphql dashboard:
  }
 
 
-<!-- o/p -->
+o/p:
 
 
 {
@@ -97,7 +109,10 @@ query all listed statements in graphql dashboard:
      }
    }
 
-<!-- o/p -->
+
+o/p:
+
+
 {
   "data": {
     "createComment": {
@@ -111,6 +126,7 @@ query all listed statements in graphql dashboard:
   }
 }
 
+
 #4)Delete comment with unique ID 
 
 
@@ -123,7 +139,10 @@ query all listed statements in graphql dashboard:
    }
    }
 
-<!-- o/p -->
+
+o/p:
+
+
 {
   "data": {
     "deleteComment": {
@@ -131,6 +150,7 @@ query all listed statements in graphql dashboard:
     }
   }
 }
+
 
 #5)query to get all posts
 
@@ -144,7 +164,10 @@ query all listed statements in graphql dashboard:
    }
  }
 
-<!-- o/p -->
+
+o/p:
+
+
 {
   "data": {
     "posts": [
@@ -182,6 +205,7 @@ query all listed statements in graphql dashboard:
   }
 }
 
+
 #6)query to get all comments with post id
 
 
@@ -200,7 +224,9 @@ query all listed statements in graphql dashboard:
    }
  }
 
-<!-- o/p -->
+o/p:
+
+
 {
   "data": {
     "postId": {
@@ -226,8 +252,3 @@ query all listed statements in graphql dashboard:
     ]
   }
 }
-
-
-
-
-

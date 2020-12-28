@@ -1,10 +1,13 @@
-# graphql-assignment
+ graphql-assignment
 
 A simple blog post and comments with associated author, and curd operation on graphical API.
+
 I used the graphene library to implement Graphql API query and mutation.
 
 
-Impelment same project in your local:
+#Impelment same project in your local:
+
+
 1)Clone repo
 2)create virtual environment
 3)install required library to implement by using "pip install -r requirements.txt"
@@ -15,19 +18,21 @@ Impelment same project in your local:
 
 query all listed statements in graphql dashboard:
 
-1) Create new blog post
 
-# mutation CreateMutation{
-#  createPost(title:"New create blog post",description:"added new post with description",author:"Madu Devara"){
-#     createPost{
-#       id
-#       title
-#       description
-#       author
-#       publishDate
-#     }
-#   }
-# }
+#1) Create new blog post
+
+
+ mutation CreateMutation{
+  createPost(title:"New create blog post",description:"added new post with description",author:"Madu Devara"){
+     createPost{
+       id
+       title
+       description
+       author
+       publishDate
+     }
+   }
+ }
 
 <!-- o/p -->
 
@@ -46,18 +51,19 @@ query all listed statements in graphql dashboard:
 }
 
 
-2) Update blog post
+#2) Update blog post
 
-# mutation updatemutation{
-#   updatePost(id:1,title:"Firs Blog Updated",author:"Ramu",description:"Update mutation all Description"){
-#     updatePosts{
-#       title
-#       description
-#       author
-#       id
-#     }
-#   }
-# }
+
+ mutation updatemutation{
+   updatePost(id:1,title:"Firs Blog Updated",author:"Ramu",description:"Update mutation all Description"){
+     updatePosts{
+       title
+       description
+       author
+       id
+     }
+   }
+ }
 
 
 <!-- o/p -->
@@ -77,17 +83,19 @@ query all listed statements in graphql dashboard:
 }
 
 
-3) create new  comment with author name 
-# mutation CreateCommentMutation{
-#   createComment(author:"Ramu",comment:"new commnet created with post author"){
-#     createComment{
-#       comment
-#       author{
-#         id
-#       }
-#     }
-#     }
-#   }
+#3) create new  comment with author name 
+
+
+ mutation CreateCommentMutation{
+   createComment(author:"Ramu",comment:"new commnet created with post author"){
+     createComment{
+       comment
+       author{
+         id
+       }
+     }
+     }
+   }
 
 <!-- o/p -->
 {
@@ -103,15 +111,17 @@ query all listed statements in graphql dashboard:
   }
 }
 
-4)Delete comment with unique ID 
-# mutation DeleteComment{
-#   deleteComment(id:15){
-#     deleteComment{
-#       comment
-#       id
-#     }
-#   }
-#   }
+#4)Delete comment with unique ID 
+
+
+ mutation DeleteComment{
+   deleteComment(id:15){
+     deleteComment{
+       comment
+       id
+     }
+   }
+   }
 
 <!-- o/p -->
 {
@@ -122,15 +132,17 @@ query all listed statements in graphql dashboard:
   }
 }
 
-5)query to get all posts
-# query{
-#   posts {
-#     title
-#     publishDate
-#     author
-#     id
-#   }
-# }
+#5)query to get all posts
+
+
+ query{
+   posts {
+     title
+     publishDate
+     author
+     id
+   }
+ }
 
 <!-- o/p -->
 {
@@ -170,22 +182,23 @@ query all listed statements in graphql dashboard:
   }
 }
 
-6)query to get all comments with post id
+#6)query to get all comments with post id
 
-# query{
-#   postId(id:1) {
-#     id
-#     title
-#     author
-#   }
-#   commentsId(id:1){
-#     comment
-#     author {
-#       id
-#       author
-#     }
-#   }
-# }
+
+ query{
+   postId(id:1) {
+     id
+     title
+     author
+   }
+   commentsId(id:1){
+     comment
+     author {
+       id
+       author
+     }
+   }
+ }
 
 <!-- o/p -->
 {

@@ -47,7 +47,7 @@ query all listed statements in graphql dashboard:
 
 o/p:
 
-'''
+```
 {
   "data": {
     "createpost": {
@@ -61,7 +61,7 @@ o/p:
     }
   }
 }
-'''
+```
 
 ###  2) Update blog post
 
@@ -80,7 +80,7 @@ o/p:
 
 o/p:
 
-
+```
 {
   "data": {
     "updatePost": {
@@ -93,7 +93,7 @@ o/p:
     }
   }
 }
-
+```
 
 ###  3) create new  comment with author name 
 
@@ -110,9 +110,10 @@ o/p:
    }
 
 
+
 o/p:
 
-
+```
 {
   "data": {
     "createComment": {
@@ -125,6 +126,7 @@ o/p:
     }
   }
 }
+```
 
 
 ###  4)Delete comment with unique ID 
@@ -142,7 +144,7 @@ o/p:
 
 o/p:
 
-
+```
 {
   "data": {
     "deleteComment": {
@@ -150,7 +152,7 @@ o/p:
     }
   }
 }
-
+```
 
 ###  5)query to get all posts
 
@@ -226,7 +228,7 @@ o/p:
 
 o/p:
 
-
+```
 {
   "data": {
     "postId": {
@@ -252,3 +254,4 @@ o/p:
     ]
   }
 }
+```

@@ -97,7 +97,7 @@ class DeleteCommentMutation(graphene.Mutation):
     def mutate(self,info,id):
         deleteComment = Comments.objects.get(id=id)
         deleteComment.delete()
-        return DeleteCommentMutation(delete_comment=deleteComment)
+        return 
 
         
 
